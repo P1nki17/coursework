@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;300;400&display=swap');
+
+body {
+    margin: 0;
+    background: linear-gradient(#111, #333);
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font: normal 16px 'Oswald', sans-serif;
+    margin: auto;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.page {
+    /*overflow: hidden;*/
+    display: grid;
+    grid-template-areas: "header" "content" "footer";
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+.header {
+    width: 1200px;
+    position: static;
+    margin: auto;
+    z-index: 1;
+    border-bottom: 3px solid #fce38a;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#PhoneStore {
+    width: 300px;
+    padding-top: 15px;
+}
+
+.nav {
+    font-size: 30px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.2s linear;
+    color: white;
+}
+
+.nav__link:hover {
+    color: #fce38a;
+}
+
+a {
+    text-decoration: none;
+}
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 200px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.nav__sort {
+    color: #fce38a;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-left: 30px;
+    display: flex;
+    max-width: 1200px;
+}
+
+#sort__tag {
+    font-size: 24px;
+    margin: 0 20px;
+}
+
+.sort__button {
+    font-family: 'Oswald', sans-serif;
+    appearance: none;
+    border: 0;
+    border-radius: 4px;
+    width: 200px;
+    background: #fce38a;
+    color: #111;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 10px;
+    padding-bottom: 8px;
+    transition: transform 0.2s;
+}
+
+.sort__button:hover {
+    transform: scale(0.9);
+}
+
+.sort__button:active {
+    opacity: 0.8;
+}
+
+.catalog__item {
+    width: calc(100%/3);
+    margin-top: 5vh;
+}
+
+.item {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    border-radius: 20px;
+}
+
+.product {
+    position: relative;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #fce38a;
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    margin: auto;
+    box-shadow: 10px 10px 20px rgb(0, 0, 0);
+    transition: 0.4s;
+}
+
+.product:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.product:active {
+    opacity: 0.6;
+}
+
+.product__title {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-bottom: 2px;
+    background-color: #111;
+    text-align: center;
+    color: #ffffff;
+}
+
+.product__description {
+    margin-top: 25px;
+    font-style: italic;
+    color: #111;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.product__footer {
+    width: 260px;
+    position: absolute;
+    bottom: 0;
+}
+
+.product__price {
+    color: #111;
+    font-size: 20px;
+}
+
+.product__price-tag {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.product__price-value {
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: #111;
+    color: #fce38a;
+    border-top-left-radius: 5px 5px;
+    border-bottom-left-radius: 5px 5px;
+}
+
+.product__currency {
+    margin-left: -4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: #111;
+    color: #fce38a;
+    border-top-right-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+}
+
+.product_view {
+    text-align: center;
+    background: #111;
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+    transition: 0.2s;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+}
+
+.footer {
+    background-color: #fce38a;
+    margin-top: auto;
+    display: flex;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 60px;
+}
+
+#logo1 {
+    max-width: 50px;
+}
+
+.informathion {
+    margin: auto;
+    padding: auto;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #fce38a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+}

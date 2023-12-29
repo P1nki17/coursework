@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Roboto:wght@100;300&display=swap');
+
+body {
+    margin: 0;
+    background: #111;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font: normal 16px 'Oswald', sans-serif;
+    margin: auto;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.page {
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: "header" "content" "footer";
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+.header {
+    width: 1200px;
+    position: static;
+    margin: auto;
+    z-index: 1000;
+    border-bottom: 3px solid #fce38a;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#PhoneStore {
+    width: 300px;
+    padding-top: 15px;
+}
+
+.nav {
+    font-size: 30px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.2s linear;
+    color: white;
+}
+
+.nav__link:hover {
+    color: #fce38a;
+}
+
+#error {
+    padding-top: 10vh;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#image__error {
+    margin: 0 auto;
+    width: 40%
+}
+
+.footer {
+    background-color: #fce38a;
+    margin-top: auto;
+    display: flex;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#logo1 {
+    max-width: 50px;
+}
+
+.informathion {
+    margin: auto;
+    padding: auto;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #fce38a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+}

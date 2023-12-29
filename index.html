@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/mainstyle.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#fce38a">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#fce38a">
+    <title>PhoneStore</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <img src="images/PhoneStore.png" alt="PhoneStore" id="PhoneStore">
+                </div>
+                <nav class="nav">
+                    <a class="nav__link" href="index.html">Главная</a>
+                    <a class="nav__link" href="pages/catalog.html">Каталог</a>
+                    <a class="nav__link" href="pages/404.html">Новости</a>
+                    <a class="nav__link" href="pages/contact.html">Связаться с нами</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="slider">
+        <a href="#" class="slider__arrow slider__arrow_left"></a>
+        <div class="slider-line">
+            <div class="slide__product">
+                <div class="slide__text">
+                    <h1 class="table__contents">Твой идеальный выбор для технологий PHONE_STORE</h1>
+                    <p class="table__subtitle">Мы предлагаем широкий ассортимент продукции по доступным ценам,
+                        чтобы вы были уверены, что найдете идеальное устройство для своих потребностей.</p>
+                </div>
+                <img src="images/stock_background/stock2.webp" alt="">
+            </div>
+            <div class="slide__product">
+                <div class="slide__text">
+                    <h1 class="table__contents">Посетите нас сегодня и обновите свои технологии</h1>
+                    <p class="table__subtitle">Наши квалифицированные специалисты помогут вам с выбором, помогут
+                        подобрать
+                        устройство
+                        и ответят на все ваши вопросы.</p>
+                </div>
+                <img src="images/stock_background/stock1.jpg" alt="">
+            </div>
+            <div class="slide__product">
+                <div class="slide__text">
+                    <h1 class="table__contents">Гарантия на любое устройство от 1 года</h1>
+                    <p class="table__subtitle">Мы обеспечиваем покупателей защитой от возможных дефектов и поломок,
+                        что делает покупку смартфона еще более надежной и безопасной.</p>
+                </div>
+                <img src="images/stock_background/stock3.jpg" alt="">
+            </div>
+        </div>
+        <a href="#" class="slider__arrow slider__arrow_right"></a>
+    </div>
+
+    <div class="promotion">
+        <div class="svg">
+            <img src="images/svg/Depth.svg" id="svg0" alt="">
+            <img src="images/svg/Depth1.svg" id="svg1" alt="">
+            <img src="images/svg/Portal.svg" id="svg2" alt="">
+            <img src="images/svg/Portal1.svg" id="svg3" alt="">
+        </div>
+        <div class="alert alert__success" id="successMessage">Код скопирован!</div>
+        <p class="promotional__code" id="clickboardInput">Скидка 10% по промокоду: SMART10</p>
+    </div>
+
+    <div class="about__us">
+        <div class="about__us_text">
+            <h2 style="border-bottom: 3px solid #fce38a; margin-right: 925px;">O нас</h2>
+            <p>Магазин PHONE_STORE специализируется на продаже смартфонов и аксессуаров к ним. В нашем магазине вы
+                можете
+                найти широкий выбор смартфонов различных брендов, моделей и ценовых категорий.
+                Мы предлагаем последние модели смартфонов, а также более доступные варианты для тех, кто хочет
+                сэкономить. Наши продавцы-консультанты помогут вам выбрать подходящий смартфон и подобрать необходимые
+                аксессуары.
+                Мы также предлагаем услуги по настройке и обслуживанию смартфонов.</p>
+            <a href="pages/catalog.html" class="btn" id="btn__catalog">В каталог</a>
+            <a href="pages/contact.html" class="btn">Связаться с нами</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="informathion">
+            <p>Контакты<br>Телефон: 8 999-604-57-19<br>Почта: PhoneStore@gmail.com</p>
+        </div>
+        <div class="informathion">
+            <img src="images/logo.png" alt="PhoneStore" id="logo1">
+        </div>
+        <div class="informathion">
+            <p>Все права защищены &#169; 2023<br>ИНН: 123456789123<br>ООО "Магазин смартфонов Орёл"</p>
+        </div>
+    </footer>
+
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/copy_text.js"></script>
+</body>
+
+</html>
